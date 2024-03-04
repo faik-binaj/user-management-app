@@ -1,0 +1,65 @@
+.form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.address-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.address-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+
+.checkbox-label {
+  width: fit-content;
+}
+
+.geo-location-inputs {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.geo-location-inputs div{
+  width: 100%;
+}
+
+@media all and (max-width: 767px) {
+  .address-column {
+    width: 100%;
+  }
+  .geo-location-inputs {
+    width: 100%;
+    display: flex;
+  }
+  .geo-location-inputs div {
+    width: 100%;
+  }
+}

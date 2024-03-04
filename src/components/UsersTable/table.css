@@ -1,0 +1,140 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h2 small {
+  font-size: 0.5em;
+}
+
+ul {
+  padding: 0;
+}
+
+.responsive-table li {
+  border-radius: 5px;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.responsive-table li:first-of-type {
+  background: transparent;
+  color: #4e5964;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.5px;
+  padding: 15px 10px;
+  margin-bottom: 0;
+}
+
+.responsive-table {
+  margin-left: 0;
+}
+
+.responsive-table .table-header {
+  background-color: transparent;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.responsive-table .table-row {
+  background-color: #ffffff;
+  color: #4e5964;
+  border: 1px solid #e7eaf3;
+}
+
+.responsive-table .col-1 {
+  flex-basis: 10%;
+}
+
+.responsive-table .col-2 {
+  flex-basis: 40%;
+}
+
+.responsive-table .col-3 {
+  flex-basis: 25%;
+}
+
+.responsive-table .col-4 {
+  flex-basis: 25%;
+}
+
+.responsive-table .col-5 {
+  flex-basis: 5%;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.responsive-table .col-5 svg {
+  width: 20px;
+  height: 20px;
+  color: #ccd2e3;
+}
+.responsive-table .col-5 svg:hover {
+  color: #a3a8b6;
+  cursor: pointer;
+}
+
+.responsive-table .col-5 .edit:hover {
+  color: #3c81fc;
+  cursor: pointer;
+}
+.responsive-table .col-5 .delete:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+@media all and (max-width: 767px) {
+  .responsive-table .table-header {
+    display: none;
+  }
+  .responsive-table .table-row {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.11);
+    border-radius: 15px;
+  }
+  .responsive-table li {
+    display: block;
+  }
+  .responsive-table .col {
+    flex-basis: 100%;
+
+  }
+  .responsive-table .col {
+    display: flex;
+    padding: 10px 0;
+  }
+  .responsive-table .col:before {
+    color: #6c7a89;
+
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+  .responsive-table .col.col-5:before  {
+    display: none;
+  }
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .flex-row div {
+    width: 100%;
+  }
+}
